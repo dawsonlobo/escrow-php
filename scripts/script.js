@@ -323,6 +323,7 @@ async function cancelDeal() {
           );
 
           document.querySelector(`.cancel-deal-btn`).disabled = true;
+          document.querySelector(`.deposit-btn`).disabled = true;
 
           // update UI
 

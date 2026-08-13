@@ -763,6 +763,9 @@ a {
   border-bottom: 1px solid var(--border);
 
   flex-shrink: 0;
+  position: sticky;
+  top: 68px;
+  z-index: 2;
 }
 
 .chat-user {
@@ -1126,7 +1129,7 @@ a {
   cursor: pointer;
 }
 
-.release-btn {
+.blue-chat-btn {
   border: none;
 
   background: var(--primary);
@@ -1134,7 +1137,7 @@ a {
   color: white;
 }
 
-.release-btn:hover {
+.blue-chat-btn:hover {
   background: var(--primary-dark);
 }
 
@@ -1288,7 +1291,9 @@ a {
     height: 36px;
   }
 
-  .make-offer-btn, .cancel-deal-btn, .deposit-btn {
+  .make-offer-btn,
+  .cancel-deal-btn,
+  .deposit-btn {
     height: 34px;
 
     padding: 0 12px;
@@ -1352,7 +1357,9 @@ a {
     font-size: 13px;
   }
 
-  .make-offer-btn, .cancel-deal-btn, .deposit-btn {
+  .make-offer-btn,
+  .cancel-deal-btn,
+  .deposit-btn {
     padding: 0 10px;
   }
 
