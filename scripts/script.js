@@ -338,11 +338,15 @@ async function cancelDeal() {
   }
 }
 
-async function depositPopup(step = 1) {
+async function depositPopup(chatId, step = 1) {
   try {
     const profileModal = document.getElementById("offerModal");
+    console.log("profileModal");
+    console.log(profileModal);
+    
 
     let fileName = "";
+    // todo: call api and determine step
 
     switch (step) {
       case 0:
@@ -366,7 +370,9 @@ async function depositPopup(step = 1) {
       // call and append
       // check if
 
-      const response = await fetch(`components/popups/offer/${fileName}.html`);
+      const response = await fetch(
+        `components/popups/deposit/${fileName}.html`,
+      );
 
       if (!response.ok) {
         throw new Error("Failed to load HTML file");
@@ -378,9 +384,14 @@ async function depositPopup(step = 1) {
     } else {
       // since existing verify if same step else delete and add html code
       // take class of
+      console.log("profileModal.className");
+      console.log(profileModal.className);
+      console.log("fileName");
+      console.log(fileName);
+      
       if (profileModal.className !== fileName) {
         const response = await fetch(
-          `components/popups/offer/${fileName}.html`,
+          `components/popups/deposit/${fileName}.html`,
         );
         if (!response.ok) {
           throw new Error("Failed to load HTML file");
@@ -396,6 +407,10 @@ async function depositPopup(step = 1) {
 
         oldModal.replaceWith(newModal);
       }
+      // make visible
+console.log();
+
+      profileModal.classList.add("open");
     }
 
     if (step === 2) {
@@ -412,7 +427,7 @@ async function depositPopup(step = 1) {
         } else {
           clearInterval(timer);
           countdownElement.textContent = "Expired";
-          openMakeOffer(3);
+          depositPopup(0,3);
         }
       }, 1000);
     }
@@ -647,6 +662,15 @@ document.addEventListener("click", function (event) {
   const chatId = button.closest(".chat-item").dataset.chatId;
 
   acceptOffer(chatId);
+});
+
+document.addEventListener("click", function (event) {
+  const button = event.target.closest(".deposit-chat-btn");
+  if (!button) return;
+
+  const chatId = button.closest(".chat-item").dataset.chatId;
+
+  depositPopup(chatId);
 });
 
 document.addEventListener("click", function (event) {
