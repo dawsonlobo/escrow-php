@@ -1,0 +1,89 @@
+<!-- =========================================
+         EDIT PROFILE MODAL
+    ========================================== -->
+
+<div class="profile-modal-overlay" id="profileModal">
+
+    <div class="profile-modal">
+
+
+        <div class="profile-modal-header">
+
+            <div>
+
+                <h2>
+                    Edit Profile
+                </h2>
+
+                <p>
+                    Update your account information.
+                </p>
+
+            </div>
+
+
+            <button type="button" class="modal-close-btn" onclick="closeEditProfile()">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- NAME -->
+
+        <div class="modal-form-group">
+
+            <label for="editName">
+                Name
+            </label>
+
+            <input type="text" id="editName" value="John Doe">
+
+        </div>
+
+
+        <!-- USER ID -->
+
+        <div class="modal-form-group">
+
+            <label for="editUserId">
+                UserId
+            </label>
+
+            <input type="text" id="editUserId" value="@johndoe">
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="modal-form-group">
+
+            <label for="editEmail">
+                Email
+            </label>
+
+            <input type="email" id="editEmail" value="dawson.lobo@gmail.com">
+
+        </div>
+
+
+        <!-- ACTIONS -->
+
+        <div class="modal-actions">
+
+            <button type="button" class="modal-cancel-btn" onclick="closeEditProfile()">
+                Cancel
+            </button>
+
+
+            <button type="button" class="modal-save-btn" onclick="saveProfile()">
+                Save Changes
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>

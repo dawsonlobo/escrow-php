@@ -1,0 +1,111 @@
+<!-- =========================================
+         EDIT PROFILE MODAL
+    ========================================== -->
+
+<div class="profile-modal-overlay" id="offerModal" class="step1">
+
+    <div class="profile-modal">
+        <!-- =========================================
+     DEPOSIT TOKEN MODAL
+========================================== -->
+
+        <div class="deposit-modal-header">
+
+            <h2>
+                Deposit Token
+            </h2>
+
+            <button type="button" class="modal-close-btn" onclick="closeOfferPopup()" aria-label="Close">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =========================================
+     QR CODE
+========================================== -->
+
+        <div class="deposit-qr-section">
+
+            <div class="deposit-qr-code">
+
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=0x82BE87d11d3a99f5213e7F15e5F5aB4eD5F5f8"
+                    alt="Escrow deposit QR code">
+
+            </div>
+
+
+            <div class="deposit-address">
+
+                0x82BE87d11d3a99f5213e7F15e5F5aB4eD5F5f8
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+     DEPOSIT DETAILS
+========================================== -->
+
+        <div class="deposit-details">
+
+            <div class="deposit-detail-row">
+
+                <span>
+                    Amount:
+                </span>
+
+                <strong>
+                    100 USDT
+                </strong>
+
+            </div>
+
+
+            <div class="deposit-detail-row">
+
+                <span>
+                    Chain:
+                </span>
+
+                <strong>
+                    BEP20 (BSC)
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+     MARK AS PAID
+========================================== -->
+
+        <div class="deposit-actions">
+
+            <button type="button" class="mark-paid-btn" onclick="openMakeOffer(2)">
+                Mark as Paid
+            </button>
+
+        </div>
+
+
+        <!-- =========================================
+     WARNING NOTE
+========================================== -->
+
+        <div class="deposit-warning">
+
+            <strong>
+                Note:
+            </strong>
+
+            Funds deposited to the wrong address
+            or chain cannot be recovered.
+
+        </div>
+    </div>
+
+</div>

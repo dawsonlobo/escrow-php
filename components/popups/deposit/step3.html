@@ -1,0 +1,78 @@
+<!-- =========================================
+         EDIT PROFILE MODAL
+    ========================================== -->
+
+<div class="profile-modal-overlay" id="offerModal">
+
+    <div class="profile-modal">
+        <!-- =========================================
+     DEPOSIT TOKEN - SUCCESS
+========================================== -->
+
+        <div class="deposit-status-modal success-state">
+
+            <!-- HEADER -->
+
+            <div class="deposit-status-header">
+
+                <h2>
+                    Deposit Token
+                </h2>
+
+
+                <button type="button" class="modal-close-btn" onclick="closeOfferPopup()" aria-label="Close">
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- SUCCESS ICON -->
+
+            <div class="transaction-success-icon">
+
+                <span>
+                    ✓
+                </span>
+
+            </div>
+
+
+            <!-- SUCCESS MESSAGE -->
+
+            <div class="transaction-success-message">
+
+                Deposited Successfully!
+
+            </div>
+
+
+            <!-- TRANSACTION INFO -->
+
+            <button type="button" class="transaction-info-btn" onclick="showTransactionInfo()">
+                Transaction Info
+            </button>
+
+
+            <!-- PROCEED -->
+
+            <button type="button" class="transaction-proceed-btn" onclick="closeOfferPopup()">
+                Proceed
+            </button>
+
+
+            <!-- AUTO CLOSE -->
+
+            <div class="transaction-auto-close">
+
+                Closing in
+                <span id="depositCloseCountdown">
+                    10
+                </span>
+                seconds
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- Confirmation Popup -->
+<div class="confirm-overlay" id="confirmPopup">
+    <div class="confirm-modal">
+
+        <!-- Header -->
+        <div class="confirm-modal-header">
+            <h2 id="confirmTitle">Confirm Action</h2>
+
+            <button
+                type="button"
+                class="confirm-close-btn"
+                onclick="closeConfirmPopup()"
+                aria-label="Close"
+            >
+                &times;
+            </button>
+        </div>
+
+        <!-- Body -->
+        <div class="confirm-modal-body">
+            <p id="confirmMessage">
+                Are you sure you want to continue?
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="confirm-modal-footer">
+            <button
+                type="button"
+                class="confirm-btn confirm-btn-no"
+                onclick="handleConfirm(false)"
+            >
+                No
+            </button>
+
+            <button
+                type="button"
+                class="confirm-btn confirm-btn-yes"
+                onclick="handleConfirm(true)"
+            >
+                Yes
+            </button>
+        </div>
+
+    </div>
+</div>

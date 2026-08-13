@@ -1,0 +1,284 @@
+<!-- =========================================
+         CHAT HEADER
+    ========================================== -->
+
+<div class="chat-header">
+
+    <div class="chat-user">
+
+        <div class="chat-avatar">
+            D
+        </div>
+
+        <div class="chat-user-info">
+
+            <strong>
+                Dawson
+            </strong>
+
+            <span>
+                Online
+            </span>
+
+        </div>
+
+    </div>
+
+    <div id="chat-side-buttons">
+        
+        <button class="make-offer-btn">
+            Make an Offer
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+         CHAT MESSAGES
+    ========================================== -->
+
+<div class="chat-messages">
+
+
+    <!-- SELLER MESSAGE -->
+
+    <div class="message-row buyer chat-item" data-chat-id="1">
+
+        <div class="message-bubble">
+
+            <p>
+                Final price is 9000 INR
+                for 100 USDT.
+            </p>
+
+            <p>
+                Shall we deal?
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFER CARD -->
+
+    <div class="message-row seller chat-item" data-chat-id="2">
+
+        <div class="offer-card">
+
+            <div class="offer-title">
+                Seller has made an offer
+            </div>
+
+
+            <div class="offer-details">
+
+                <div>
+                    Amount:
+                    <strong>100 USDT</strong>
+                </div>
+
+                <div>
+                    Token:
+                    <strong>USDT</strong>
+                </div>
+
+                <div>
+                    Method:
+                    <strong>CDM</strong>
+                </div>
+
+                <div>
+                    Estimated Time:
+                    <strong>20 min</strong>
+                </div>
+
+            </div>
+
+
+            <div class="offer-actions">
+
+                <button class="accept-btn">
+                    Accept
+                </button>
+
+                <button class="decline-btn">
+                    Decline
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRANSACTION STATUS -->
+
+    <div class="system-message chat-item" data-chat-id="3">
+
+        <span>
+            You have accepted the offer! Please wait for Dawson to deposit the USDT
+        </span>
+
+    </div>
+
+    <div class="message-row buyer chat-item" data-chat-id="5">
+
+        <div class="payment-card">
+
+            <div class="payment-title">
+                Seller has marked payment as done
+            </div>
+
+
+            <div class="payment-details">
+
+                <div>
+                    Payment Proof
+                </div>
+
+                <a href="#">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <div class="payment-actions">
+
+                <button class="release-btn">
+                    Release
+                </button>
+
+                <button class="dispute-btn">
+                    Dispute
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="system-message chat-item" data-chat-id="3">
+
+        <span>
+            You have accepted the offer! Please wait for Dawson to deposit the USDT
+        </span>
+
+    </div>
+
+    <div class="system-message chat-item" data-chat-id="4">
+
+        <span>
+            USDT deposited successfully.
+            <a href="#">(Tx Info)</a>
+        </span>
+
+        <!-- <span>
+            Now you can pay INR to the seller's account.
+        </span> -->
+
+    </div>
+
+    <!-- PAYMENT STATUS -->
+
+
+
+    <div class="message-row buyer chat-item" data-chat-id="5">
+
+        <div class="payment-card">
+
+            <div class="payment-title">
+                Seller has marked payment as done
+            </div>
+
+
+            <div class="payment-details">
+
+                <div>
+                    Payment Proof
+                </div>
+
+                <a href="#">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <div class="payment-actions">
+
+                <button class="release-btn">
+                    Release
+                </button>
+
+                <button class="dispute-btn">
+                    Dispute
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPLETED STATUS -->
+
+    <div class="system-message success chat-item" data-chat-id="6">
+
+        <span>
+            Seller has released the token.
+            <a href="#">(Tx Info)</a>
+        </span>
+
+        <span>
+            Deal is completed!
+        </span>
+
+    </div>
+
+
+
+    <div class="system-message chat-item" data-chat-id="7">
+
+        <span>
+            Dawson has deposited 100 USDT.
+            <a href="#">(Tx Info)</a>
+        </span>
+
+        <span>
+            Now you can pay INR to the seller's account.
+        </span>
+
+    </div>
+
+
+
+
+</div>
+
+
+<!-- =========================================
+         CHAT INPUT
+    ========================================== -->
+
+<div class="chat-input-wrapper">
+
+    <button class="attachment-btn" type="button" aria-label="Attach file">
+        📎
+    </button>
+
+
+    <input type="text" class="chat-input" placeholder="Type a message...">
+
+
+    <button class="send-btn" type="button" aria-label="Send message">
+        ➤
+    </button>
+
+</div>

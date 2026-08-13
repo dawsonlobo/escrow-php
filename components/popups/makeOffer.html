@@ -1,0 +1,194 @@
+<!-- =========================================
+         EDIT PROFILE MODAL
+    ========================================== -->
+
+<div class="profile-modal-overlay" id="offerModal">
+
+    <div class="profile-modal">
+        <!-- =========================================
+     MAKE OFFER MODAL
+========================================== -->
+
+        <div class="offer-modal">
+
+            <!-- HEADER -->
+
+            <div class="offer-modal-header">
+
+                <h2>
+                    Make an Offer
+                </h2>
+
+                <button type="button" class="modal-close-btn" onclick="closeOfferPopup()" aria-label="Close">
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="offer-form">
+
+                <!-- Chain -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerChain">
+                        Type
+                    </label>
+
+                    <select id="offerChain">
+
+                        <option>
+                            Buy
+                        </option>
+
+                        <option>
+                            Sell
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Type -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerType">
+                        Type
+                    </label>
+
+                    <select id="offerType">
+
+                        <option>
+                            USDT
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- INR -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerInr">
+                        INR
+                    </label>
+
+                    <input id="offerInr" type="number" value="9000">
+
+                </div>
+
+
+                <!-- Token -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerToken">
+                        Token
+                    </label>
+
+                    <input id="offerToken" type="number" value="100">
+
+                </div>
+
+
+                <!-- Rate -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerRate">
+                        Rate
+                    </label>
+
+                    <input id="offerRate" type="text" value="90 INR / USDT" readonly>
+
+                </div>
+
+
+                <!-- Payment Method -->
+
+                <div class="offer-form-row">
+
+                    <label for="offerMethod">
+                        Pay Method
+                    </label>
+
+                    <select id="offerMethod">
+
+                        <option>
+                            UPI QR
+                        </option>
+
+                        <option>
+                            Cash
+                        </option>
+
+                        <option>
+                            CDM
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEES -->
+
+            <div class="offer-fees">
+
+                Fees:
+                <strong>0 USDT</strong>
+
+            </div>
+
+
+            <!-- SUMMARY -->
+
+            <div class="offer-summary">
+
+                <div class="offer-summary-row">
+
+                    Seller will pay
+
+                    <strong>
+                        100 USDT
+                    </strong>
+
+                </div>
+
+
+                <div class="offer-summary-row">
+
+                    Buyer will get
+
+                    <strong>
+                        100 USDT
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTION -->
+
+            <div class="offer-actions">
+
+                <button type="button" class="offer-submit-btn" onclick="makeOffer()">
+                    Make Offer
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
